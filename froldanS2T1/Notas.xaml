@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="froldanS2T1.Notas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Tarea Semana 2" FontSize="30" TextColor="Red" HorizontalTextAlignment="Center"></Label>
+            <!--Datos numericos-->
+            <Label Text="Parcial 1" FontSize="24" TextColor="Green" HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="txtNotaSeg1" Placeholder="Ingresa la Nota de Seguimiento" Keyboard="Numeric"/>
+            <Entry x:Name="txtExa1" Placeholder="Ingresa la nota del Examen" Keyboard="Numeric"/>
+            <Label Text="Parcial 2" FontSize="24" TextColor="Green" HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="txtNotaSeg2" Placeholder="Ingresa la Nota de Seguimiento" Keyboard="Numeric"/>
+            <Entry x:Name="txtExa2" Placeholder="Ingresa la nota del Examen" Keyboard="Numeric"/>
+            <Label Text="Nota Final" FontSize="24" TextColor="Green" HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="txtDatoresultado" Placeholder="Su nota final es:" IsEnabled="False"/>
+            <!--<Label x:Name="lblResultado" FontSize="18"/>-->
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+            <Button x:Name="btnLimpiar" Text="Limpiar" Clicked="btnLimpiar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

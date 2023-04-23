@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="froldanS2T1.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de Incio" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
+            <Image Source="https://www.pngall.com/wp-content/uploads/5/Account-Login-Button-PNG-Download-Image.png" WidthRequest="100" HeightRequest="100"/>
+            <!--<Entry x:Name="txtdato" Placeholder="dato" MaxLength="5"/>-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtuser" Placeholder="Usuario" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="pass" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtpass" Placeholder="Contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"/>
+                <Button x:Name="btnInciar" Text="Iniciar" Clicked="btnInciar_Clicked" Grid.Row="2" Grid.Column="0"/>
+                <!--<Button x:Name="btnRegistrar" Text="Registrar" Clicked="btnRegistrar_Clicked" Grid.Row="2" Grid.Column="1"/>-->
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
